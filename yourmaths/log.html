@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logarithms | YourMaths</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="main.css" />
+        <style>
+            h1{
+                text-align: center;
+                align-content: center;
+            }
+            .result{
+                display:none;
+                font-size:1.33em;
+            }
+            .right{
+                color: darkgreen;
+            }
+            .wrong{
+                color: darkred;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sequences</h1>
+        <h3></h3><br>
+        <div class="container">
+            <h3>1. Find: log<sub>4</sub>64</h3>
+            <input type="number" id="a">
+            <button id="ac" onclick="af()">Check</button>
+            <br>
+            <h3 class="result right" id="ar">Correct!</h3>
+            <h3 class="result wrong" id="aw">Incorrect, the answer is 3.</h3>
+            
+            <h3>2. Find log<sub>2</sub>(0.25)</h3>
+            <input type="number" id="b">
+            <button id="bc" onclick="bf()">Check</button>
+            <br>
+            <h3 class="result right" id="br">Correct!</h3>
+            <h3 class="result wrong" id="bw">Incorrect, the answer is -2.</h3>
+            
+            <h3>3. Find log<sub>81</sub>3. Give your answer in decimals.</h3>
+            <input type="number" id="c">
+            <button id="cc" onclick="cf()">Check</button>
+            <br>
+            <h3 class="result right" id="cr">Correct!</h3>
+            <h3 class="result wrong" id="cw">Incorrect, the answer is 0.25</h3>
+            
+            <h3>4. Solve for x: 3<sup>x</sup> = 300. Round your answer to two decimal places.</h3>
+            <input type="number" id="d">
+            <button id="dc" onclick="df()">Check</button>
+            <br>
+            <h3 class="result right" id="dr">Correct!</h3>
+            <h3 class="result wrong" id="dw">Incorrect, the answer is 5.19</h3>
+            
+            <h3>8. Solve for x in 3<sup>x+2</sup> = 2<sup>1-x</sup>. Give your answer to the nearest thousandth.</h3>
+            <input type="number" id="e">
+            <button id="ec" onclick="ef()">Check</button>
+            <br>
+            <h3 class="result right" id="er">Correct!</h3>
+            <h3 class="result wrong" id="ew">Incorrect, the answer is 0.839</h3>
+        </div>
+        <script>
+            function af(){
+                if (document.getElementById("a").value == 3){
+                    document.getElementById("ar").style.display = "block";
+                    document.getElementById("aw").style.display = "none";
+                }
+                else{
+                    document.getElementById("aw").style.display = "block";
+                    document.getElementById("ar").style.display = "none";
+                }
+            }
+            
+            function bf(){
+                if (document.getElementById("b").value == -2){
+                    document.getElementById("br").style.display = "block";
+                    document.getElementById("bw").style.display = "none";
+                }
+                else{
+                    document.getElementById("bw").style.display = "block";
+                    document.getElementById("br").style.display = "none";
+                }
+            }
+            
+            function cf(){
+                if (document.getElementById("c").value == 0.25){
+                    document.getElementById("cr").style.display = "block";
+                    document.getElementById("cw").style.display = "none";
+                }
+                else{
+                    document.getElementById("cw").style.display = "block";
+                    document.getElementById("cr").style.display = "none";
+                }
+            }
+            
+            function df(){
+                if (document.getElementById("d").value == 5.19){
+                    document.getElementById("dr").style.display = "block";
+                    document.getElementById("dw").style.display = "none";
+                }
+                else{
+                    document.getElementById("dw").style.display = "block";
+                    document.getElementById("dr").style.display = "none";
+                }
+            }
+            
+             function ef(){
+                if (document.getElementById("e").value == 0.839){
+                    document.getElementById("er").style.display = "block";
+                    document.getElementById("ew").style.display = "none";
+                }
+                else{
+                    document.getElementById("ew").style.display = "block";
+                    document.getElementById("er").style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

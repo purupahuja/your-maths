@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions - Algebra | YourMaths</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="main.css" />
+        <style>
+            h1{
+                text-align: center;
+                align-content: center;
+            }
+            .result{
+                display:none;
+                font-size:1.33em;
+            }
+            .right{
+                color: darkgreen;
+            }
+            .wrong{
+                color: darkred;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Functions</h1>
+        <h3></h3><br>
+        <div class="container">
+            <h3>1. If f(x)= 3x+2, find the value of: f(-5)</h3>
+            <input type="number" id="a">
+            <button id="ac" onclick="af()">Check</button>
+            <br>
+            <h3 class="result right" id="ar">Correct!</h3>
+            <h3 class="result wrong" id="aw">Incorrect, the answer is -13.</h3>
+            
+            <h3>2. If f(x)= 3x-x<sup>2</sup>+2, find the value of: f(-7)</h3>
+            <input type="number" id="b">
+            <button id="bc" onclick="bf()">Check</button>
+            <br>
+            <h3 class="result right" id="br">Correct!</h3>
+            <h3 class="result wrong" id="bw">Incorrect, the answer is -68.</h3>
+            
+            <h3>3. If f(x)= x-(4/x), find the value of: f(-1/2). Please give your answer in decimal form.</h3>
+            <input type="number" id="c">
+            <button id="cc" onclick="cf()">Check</button>
+            <br>
+            <h3 class="result right" id="cr">Correct!</h3>
+            <h3 class="result wrong" id="cw">Incorrect, the answer is 7.5</h3>
+            
+            <h3>4. Suppose g(x)= 2x+3/x-4, find a value of x such that g(x) does not exist.</h3>
+            <input type="number" id="d">
+            <button id="dc" onclick="df()">Check</button>
+            <br>
+            <h3 class="result right" id="dr">Correct!</h3>
+            <h3 class="result wrong" id="dw">Incorrect, the answer is 4.</h3>
+            
+            <h3>5. The value of a photocopier t years after purchase is given by v(t)= 9650-860t euros. Find t when v(t)= 5780. Round your answer to the nearest tenth.</h3>
+            <input type="number" id="e">
+            <button id="ec" onclick="ef()">Check</button>
+            <br>
+            <h3 class="result right" id="er">Correct!</h3>
+            <h3 class="result wrong" id="ew">Incorrect, the answer is 4.5</h3>
+        </div>
+        <script>
+            function af(){
+                if (document.getElementById("a").value == -13){
+                    document.getElementById("ar").style.display = "block";
+                    document.getElementById("aw").style.display = "none";
+                }
+                else{
+                    document.getElementById("aw").style.display = "block";
+                    document.getElementById("ar").style.display = "none";
+                }
+            }
+            
+            function bf(){
+                if (document.getElementById("b").value == -68){
+                    document.getElementById("br").style.display = "block";
+                    document.getElementById("bw").style.display = "none";
+                }
+                else{
+                    document.getElementById("bw").style.display = "block";
+                    document.getElementById("br").style.display = "none";
+                }
+            }
+            
+            function cf(){
+                if (document.getElementById("c").value == 7.5){
+                    document.getElementById("cr").style.display = "block";
+                    document.getElementById("cw").style.display = "none";
+                }
+                else{
+                    document.getElementById("cw").style.display = "block";
+                    document.getElementById("cr").style.display = "none";
+                }
+            }
+            
+            function df(){
+                if (document.getElementById("d").value == 4){
+                    document.getElementById("dr").style.display = "block";
+                    document.getElementById("dw").style.display = "none";
+                }
+                else{
+                    document.getElementById("dw").style.display = "block";
+                    document.getElementById("dr").style.display = "none";
+                }
+            }
+            
+             function ef(){
+                if (document.getElementById("e").value == 4.5){
+                    document.getElementById("er").style.display = "block";
+                    document.getElementById("ew").style.display = "none";
+                }
+                else{
+                    document.getElementById("ew").style.display = "block";
+                    document.getElementById("er").style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

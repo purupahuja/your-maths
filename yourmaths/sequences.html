@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sequences - Algebra | YourMaths</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="main.css" />
+        <style>
+            h1{
+                text-align: center;
+                align-content: center;
+            }
+            .result{
+                display:none;
+                font-size:1.33em;
+            }
+            .right{
+                color: darkgreen;
+            }
+            .wrong{
+                color: darkred;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sequences</h1>
+        <h3></h3><br>
+        <div class="container">
+            <h3>1. Find the 10<sup>th</sup> term of the following arithmetic sequence: 101, 97, 93, 89…</h3>
+            <input type="number" id="a">
+            <button id="ac" onclick="af()">Check</button>
+            <br>
+            <h3 class="result right" id="ar">Correct!</h3>
+            <h3 class="result wrong" id="aw">Incorrect, the answer is 65.</h3>
+            
+            <h3>2. Consider the sequence: 87, 83, 79, 75, 71,… which term of the sequence is -297?</h3>
+            <input type="number" id="b">
+            <button id="bc" onclick="bf()">Check</button>
+            <br>
+            <h3 class="result right" id="br">Correct!</h3>
+            <h3 class="result wrong" id="bw">Incorrect, the answer is 97.</h3>
+            
+            <h3>3. A sequence is defined by: U<sub>n</sub>= 3n-2. Find the 57<sup>th</sup> term.</h3>
+            <input type="number" id="c">
+            <button id="cc" onclick="cf()">Check</button>
+            <br>
+            <h3 class="result right" id="cr">Correct!</h3>
+            <h3 class="result wrong" id="cw">Incorrect, the answer is 169</h3>
+            
+            <h3>4. Find the 6<sub>th</sub> term of the following geometric sequence: 2, 10, 50…</h3>
+            <input type="number" id="d">
+            <button id="dc" onclick="df()">Check</button>
+            <br>
+            <h3 class="result right" id="dr">Correct!</h3>
+            <h3 class="result wrong" id="dw">Incorrect, the answer is 6250</h3>
+            
+            <h3>Find k given that the following are consecutive terms of a geometric sequence: k, k+8, 9k</h3>
+            <input type="number" id="e">
+            <button id="ec" onclick="ef()">Check</button>
+            <br>
+            <h3 class="result right" id="er">Correct!</h3>
+            <h3 class="result wrong" id="ew">Incorrect, the answer is 2</h3>
+        </div>
+        <script>
+            function af(){
+                if (document.getElementById("a").value == 65){
+                    document.getElementById("ar").style.display = "block";
+                    document.getElementById("aw").style.display = "none";
+                }
+                else{
+                    document.getElementById("aw").style.display = "block";
+                    document.getElementById("ar").style.display = "none";
+                }
+            }
+            
+            function bf(){
+                if (document.getElementById("b").value == 97){
+                    document.getElementById("br").style.display = "block";
+                    document.getElementById("bw").style.display = "none";
+                }
+                else{
+                    document.getElementById("bw").style.display = "block";
+                    document.getElementById("br").style.display = "none";
+                }
+            }
+            
+            function cf(){
+                if (document.getElementById("c").value == 169){
+                    document.getElementById("cr").style.display = "block";
+                    document.getElementById("cw").style.display = "none";
+                }
+                else{
+                    document.getElementById("cw").style.display = "block";
+                    document.getElementById("cr").style.display = "none";
+                }
+            }
+            
+            function df(){
+                if (document.getElementById("d").value == 6250){
+                    document.getElementById("dr").style.display = "block";
+                    document.getElementById("dw").style.display = "none";
+                }
+                else{
+                    document.getElementById("dw").style.display = "block";
+                    document.getElementById("dr").style.display = "none";
+                }
+            }
+            
+             function ef(){
+                if (document.getElementById("e").value == 2){
+                    document.getElementById("er").style.display = "block";
+                    document.getElementById("ew").style.display = "none";
+                }
+                else{
+                    document.getElementById("ew").style.display = "block";
+                    document.getElementById("er").style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
